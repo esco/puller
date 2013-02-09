@@ -37,7 +37,6 @@ class Puller extends EventEmitter
 		@end_key = _.keys(end)[0]
 		@end_val = _.values(end)[0]
 		@keepBounds()
-		@max_start = (@end_val - @limit_val)
 		@delay = delay
 		@params[@limit_key] = @limit_val
 		@waitIntervalId = setInterval @run, delay
